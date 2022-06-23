@@ -11,7 +11,7 @@ myPoint.Display();
 myPoint.Decrement();
 myPoint.Decrement();
 myPoint.Display();
-Point myPoint2 = new Point(40,60);
+Point myPoint2 = new Point(40, 60);
 myPoint2.Display();
 
 Person person = new();
