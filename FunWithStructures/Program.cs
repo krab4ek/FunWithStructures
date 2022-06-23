@@ -14,10 +14,22 @@ myPoint.Display();
 Point myPoint2 = new Point(40,60);
 myPoint2.Display();
 
+Person person = new();
+person.Print();
+person.age = 45;
+person.name = "Abapel";
+person.Print();
 
 
 #endregion
-
+struct Person
+{
+    // инициализация полей значениями по умолчанию - доступна с C#10
+    public string name = "Andrei";
+    public int age = 32;
+    public Person() { }
+    public void Print() => Console.WriteLine($"Name: {name}  Age: {age}");
+}
 struct Point
 {
     //Поля структуры
